@@ -1,1 +1,4 @@
-<resources><string name="desc">ЧБ віджет для YouTube Music</string></resources>
+<resources>
+    <string name="desc">ЧБ віджет для YouTube Music</string>
+    <string name="desc_color">Кольоровий віджет для YouTube Music</string>
+</resources>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mykhailo.ytwidget" android:versionCode="1" android:versionName="1.0">
+    package="com.mykhailo.ytwidget" android:versionCode="2" android:versionName="1.1">
     <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <queries>
         <package android:name="com.google.android.apps.youtube.music"/>
     </queries>
@@ -18,6 +19,12 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
+        </receiver>
+        <receiver android:name=".ColorMusicWidget" android:exported="true" android:label="Mono Music Color">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_color"/>
         </receiver>
         <service android:name=".MediaListener" android:exported="true"
             android:label="Mono Music Widget"

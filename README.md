@@ -2,7 +2,7 @@
 
 [Українська](README.uk.md)
 
-A black-and-white 2x2 home-screen widget for YouTube Music: grayscale album art, track title, artist and playback buttons on top. The app has no permissions at all, no internet and no ads.
+A 2x2 home-screen widget for YouTube Music: album art, track title, artist and playback buttons on top. Comes in two variants - black-and-white (grayscale art) and full color - added as two separate widgets. The app needs no permissions beyond the media-session access you grant it, and only talks to the internet to check for a new release on GitHub.
 
 <p>
   <img src="docs/screenshots/home-screen.jpg" width="250">
@@ -11,9 +11,10 @@ A black-and-white 2x2 home-screen widget for YouTube Music: grayscale album art,
 
 ## Features
 
-- Square 2x2 widget, resizable
-- Album art in grayscale with a bit more contrast, about 78% opaque so the wallpaper shows through
+- Square 2x2 widget, resizable; pick "Mono Music" (black-and-white) or "Mono Music Color" (full color) when adding it
+- Album art with a bit more contrast, about 78% opaque so the wallpaper shows through
 - Title, artist and previous / play-pause / next buttons over a dark gradient; the play button shows the current state
+- Keeps showing the last played track instead of going blank when YouTube Music stops or closes
 - Tap the cover to open YouTube Music
 
 ## How it works
@@ -44,6 +45,8 @@ sh build.sh
 ## Author
 
 S-Mykhailo - [@savchenko_mykhailo](https://t.me/savchenko_mykhailo)
+
+Dev channel: [t.me/s_mykhailo_dev](https://t.me/s_mykhailo_dev)
 
 ## License
 
